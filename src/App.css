@@ -9,7 +9,7 @@ body, html, #root {
 }
 
 .app-wrapper {
-  height: 100vh;
+  
   background-color: #6c48ff;
 }
 
@@ -70,7 +70,9 @@ body, html, #root {
   display: flex;
   justify-content: space-between;
   padding: 12px;
+  
   align-items: center;
+  margin: 0 auto; /* This centers it */
 }
 
 .top-bar .btn-group button {
@@ -100,7 +102,8 @@ body, html, #root {
 
 .social-media {
   background-color: #210c6e;
-  margin: 0 16px 16px;
+  margin: 0 auto 16px; /* auto for horizontal centering */
+  width: 344px;
   border-radius: 10px;
   padding: 12px 0;
   text-align: center;
@@ -404,13 +407,16 @@ body, html, #root {
   margin: 0 8px;
 }
 .pra-container {
-  background:white;
+  background: white;
+  width: 344px;
   color: white;
   padding: 16px;
   text-align: center;
   min-height: 100vh;
   position: relative;
+  margin: 0 auto; /* ✅ Horizontally centers the container */
 }
+
 
 .pra-back-btn {
   position: absolute;
@@ -578,7 +584,7 @@ body, html, #root {
 }
 .ye-container {
   background-color: #210c6e;
-  padding: 30px;
+  padding: 8px;
   border-radius: 10px;
   color: white;
   width: 100%;
@@ -694,10 +700,12 @@ body, html, #root {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 14px;
+  width: 344px;
   border-radius: 8px;
-  
   font-family: sans-serif;
+  margin: 0 auto; /* ✅ Horizontally centers the container */
 }
+
 
 .uyt-heading {
   font-size: 20px;
@@ -976,17 +984,15 @@ body, html, #root {
   text-align: center;
 }
 
-.upp-no-data {
-  color: #ccc;
-  text-align: center;
-}
 .yyr-container {
-  padding: 2rem;
+     padding: 15px;
+    border-radius: 0.5rem;
+    width: 368px;
 
-  border-radius: 0.5rem;
-  max-width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto; /* horizontally center */
 }
+
 
 .yyr-title {
   font-size: 1.25rem;
@@ -1219,11 +1225,11 @@ body, html, #root {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  margin-bottom: 20px;
-
+  margin: 20px auto; /* This centers the box horizontally */
+  width: 344px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* This centers the icon horizontally */
+  align-items: center; /* This centers content inside */
   justify-content: center;
 }
 
@@ -1252,9 +1258,11 @@ body, html, #root {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 344px;
   gap: 15px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px; /* ✅ Centers horizontally */
 }
+
 
 .oiu-action-card,
 .oiu-team-card {
@@ -1287,12 +1295,13 @@ body, html, #root {
   background-color: #210C6E;
   border-radius: 16px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto; /* ✅ Centers the container horizontally */
   text-align: center;
-  width: 100%;
+  width: 344px;
   color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .m-wallet-section {
   display: flex;
@@ -1340,6 +1349,12 @@ body, html, #root {
   font-size: 16px;
   cursor: pointer;
 }
-.gf{
-      border-radius: 14px;
+.gf {
+  border-radius: 14px;
+  width: 344px;
+  margin: 0 auto; /* centers horizontally */
+}
+.bhh{
+  width: 383px;
+   margin: 0 auto; 
 }

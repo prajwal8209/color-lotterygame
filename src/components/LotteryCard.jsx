@@ -16,6 +16,7 @@ const LotteryCard = () => {
 
   return (
     <div className="dashboard-container">
+      <div className='bhh'>
       {/* Top Bar */}
    <div class="top-bar">
         <button class="bg-[#b1a1fa] text-white px-2 py-1 rounded">☰</button>
@@ -120,7 +121,7 @@ const LotteryCard = () => {
       </div>
 
       <div style={{ marginBottom: '100px' }}></div>
-    </div>
+    </div></div>
   );
 };
 

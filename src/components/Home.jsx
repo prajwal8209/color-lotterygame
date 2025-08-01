@@ -4,12 +4,12 @@ import "../App.css";
 import logo from "../assets/xxv.png";
 
 function Home() {
-  const navigate = useNavigate(); // ✅ Add this line
+  const navigate = useNavigate();
 
   return (
-    <div className="app-wrapper d-flex justify-content-center align-items-center">
+    <div className="app-wrapper  flex items-center justify-center"> {/* ✅ Center using Tailwind */}
       <div className="card-container text-center p-4">
-        <div className="image-wrapper position-relative">
+        <div className="image-wrapper relative">
           <img src={logo} alt="Color Prediction" className="logo-img" />
         </div>
 

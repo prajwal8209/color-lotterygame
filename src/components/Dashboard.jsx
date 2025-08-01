@@ -93,7 +93,8 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: "20px" }}>
+     <div style={{ margin: "20px auto", width: "340px" }}>
+
         <div className="mt-5 px-4">
           <div className="flex items-center w-full h-12 px-5 text-xs rounded-full bg-[#ffb800] text-black shadow-md shadow-gray-400/40 overflow-hidden">
             {/* Speaker Icon */}

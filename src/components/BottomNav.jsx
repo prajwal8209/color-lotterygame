@@ -6,7 +6,13 @@ import { BsPerson } from "react-icons/bs";
 const BottomNav = () => {
   return (
     <div
-    style={{ height: "12%", borderRadius: "25px 24px 0 0" }}
+   style={{
+    height: "12%",
+    borderRadius: "25px 24px 0 0",
+    width: "375px",
+    margin: "0 auto"
+  }}
+
 
       className="fixed bottom-0 left-0 right-0 bg-[#5735D2] text-white font-bold shadow-md flex justify-between items-center px-4 py-2 border-t"
     >

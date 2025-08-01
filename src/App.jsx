@@ -23,7 +23,7 @@ function AppContent() {
   const shouldShowBottomNav = !hideBottomNavPaths.includes(location.pathname);
 
   return (
-    <div className="min-h-screen relative ">
+    <div className="min-h-screen app-wrapper relative ">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />
