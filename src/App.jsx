@@ -10,7 +10,7 @@ import LotteryCard from './components/LotteryCard';
 import LotteryHistory from './components/LotteryHistory';
 import USDTDeposit from './components/USDTDeposit';
 import WalletDashboard from './components/WalletDashboard';
-import Chat from './components/chat';
+import Chat from './components/Chat';
 
 
 
