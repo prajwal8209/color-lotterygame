@@ -74,18 +74,7 @@ const LotteryHistory = () => {
 
   return (   <div className="dashboard-container">
         {/* Top bar */}
-        <div className="top-bar">
-          <button className="bg-[#b1a1fa] text-white px-2 py-1 rounded">☰</button>
-          <div className="btn-group">
-             <Link to="/dashboard">
-            <button className="bg-[#FEA500]">
-              <FiLogOut size={20} />
-            </button></Link>
-            <button className="bg-red-600">
-              <FaUser size={20} />
-            </button>
-          </div>
-        </div>
+        
     
     <div className="yyr-container">
         
