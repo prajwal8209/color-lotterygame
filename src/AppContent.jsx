@@ -14,13 +14,15 @@ import LotteryHistory from './components/LotteryHistory';
 import USDTDeposit from './components/USDTDeposit';
 import WalletDashboard from './components/WalletDashboard';
 import Chat from './components/Chat';
+import Signup from './components/Signup';
+import Noti from './components/Noti';
 
 function AppContent() {
   const location = useLocation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
 
-  const hideTopBottomNavPaths = ['/', '/login'];
+  const hideTopBottomNavPaths = ['/', '/login','/sign'];
   const shouldShowTopNav = !hideTopBottomNavPaths.includes(location.pathname);
   const shouldShowBottomNav = !hideTopBottomNavPaths.includes(location.pathname);
 
@@ -91,6 +93,8 @@ function AppContent() {
         <Route path="/usdt" element={<USDTDeposit />} />
         <Route path="/wallet" element={<WalletDashboard />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/sign" element={<Signup />} />
+        <Route path="/noti" element={<Noti />} />
       </Routes>
 
       {/* Bottom Navigation */}

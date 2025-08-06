@@ -15,7 +15,7 @@ const WalletDashboard = () => {
      <div className="dashboard-container">
           {/* Top bar */}
       
-    <div className="oiu-container">
+    <div className="dwq-container">
       <div className="oiu-wallet-box">
         <h2 className="oiu-wallet-title">Wallet</h2>
         <FaWallet  className="oiu-wallet-icon" />

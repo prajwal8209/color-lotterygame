@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import "../App.css";
 
 const ChoosePlan = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const sidebarRef = useRef(null);
 
   return (
     <div className="dashboard-container">

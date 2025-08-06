@@ -5,8 +5,7 @@ import { FaUser } from "react-icons/fa";
 
 const GameDashboard = () => {
   const [activeTab, setActiveTab] = useState("record");
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const sidebarRef = useRef(null);
+
 
   return (
     <div className="game-wrapper">

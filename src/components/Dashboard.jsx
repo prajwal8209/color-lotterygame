@@ -17,15 +17,32 @@ import {
 import { MdVolumeUp } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsBarChart, BsWallet2, BsChatDots } from "react-icons/bs";
-
+const iconStyle = {
+  border: "1px solid white",
+  borderRadius: "50%",
+  padding: "8px", 
+  color: "white", 
+  margin: "5px", 
+  fontSize: "20px", 
+};
+const containerStyle = {
+  border: "1px solid white",
+  borderRadius: "50%",
+  height: "36px",
+  width: "36px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "white",
+  margin: "5px",
+  fontSize: "24px", 
+};
 const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
 
   return (
     <div className="dashboard-container">
-  
-
       {/* Banner */}
       <div className="banner">
         <div className="banner-video-container">
@@ -39,11 +56,21 @@ const Dashboard = () => {
       <div className="social-media">
         <p className="font-bold">Social Media</p>
         <div className="social-icons">
-          <FaTelegramPlane />
-          <FaFacebookF />
-          <FaTwitter />
-          <FaYoutube />
-          <FaInstagram />
+          <div style={containerStyle}>
+            <FaTelegramPlane />
+          </div>
+          <div style={containerStyle}>
+            <FaFacebookF />
+          </div>
+          <div style={containerStyle}>
+            <FaTwitter />
+          </div>
+          <div style={containerStyle}>
+            <FaYoutube />
+          </div>
+          <div style={containerStyle}>
+            <FaInstagram />
+          </div>
         </div>
       </div>
 
@@ -75,12 +102,15 @@ const Dashboard = () => {
           </div>
           <h3 className="gfd-title">Your Referral Link</h3>
           <p className="gfd-description">
-            Copy your referral link and share with your friends to get more income.
+            Copy your referral link and share with your friends to get more
+            income.
           </p>
           <p className="gfd-link">
             https://ch4.mlmwebsite.tech/Home/SignUp?REG
           </p>
-          <button className="gfd-copy-button">Copy Invitation Link 📋</button>
+          <Link to="/noti">
+            <button className="gfd-copy-button">Copy Invitation Link 📋</button>
+          </Link>
         </div>
       </div>
 
@@ -93,7 +123,8 @@ const Dashboard = () => {
             </div>
             <div className="relative w-full overflow-hidden h-[1.8rem]">
               <div className="marquee-test text-blue-700 text-[13px] leading-[14px]">
-                M4C Exchange, M4C SWAP, Crypto Gaming, Aviator & Colourprediction Coming Soon ..2025..
+                M4C Exchange, M4C SWAP, Crypto Gaming, Aviator &
+                Colourprediction Coming Soon ..2025..
               </div>
             </div>
             <button className="ml-auto flex items-center justify-center gap-1 w-16 h-7 text-black font-bold border border-blue-900 bg-gradient-to-r from-indigo-600 to-blue-500 rounded-full px-2">
@@ -115,7 +146,7 @@ const Dashboard = () => {
               ["🔍", "24/7 Customer service"],
               ["💎", "Beginner’s Guide (PDF)"],
               ["📘", "About us"],
-              ["⬇️", "Download APP"]
+              ["⬇️", "Download APP"],
             ].map(([icon, text], i) => (
               <React.Fragment key={i}>
                 <div className="rew-item">
@@ -130,21 +161,9 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Extra space for bottom nav */}
+   
       <div style={{ marginTop: "100px" }}></div>
 
-      {/* Bottom Nav (commented out)
-      <div className="bottom-nav">
-        <div className="nav-item"><AiOutlineHome size={20} /><span>Home</span></div>
-        <div className="nav-item"><BsBarChart size={20} /><span>Result</span></div>
-        <div className="nav-item deposit">
-          <span style={{ backgroundColor: '#facc15', padding: '6px', borderRadius: '50%' }}>💎</span>
-          <span>Deposit</span>
-        </div>
-        <div className="nav-item"><BsWallet2 size={20} /><span>Wallet</span></div>
-        <div className="nav-item"><BsChatDots size={20} /><span>Chat</span></div>
-      </div>
-      */}
     </div>
   );
 };

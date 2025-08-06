@@ -59,7 +59,7 @@ body, html, #root {
 }
 
 .dashboard-container {
-  background-color: #ffffff;
+ background: linear-gradient(to right, white, white);
   min-height: 100vh;
   color: white;
   overflow-y: auto; /* Enables vertical scrollbar if content overflows */

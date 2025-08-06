@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // ⬅️ Import this
+import { useNavigate } from 'react-router-dom'; // ⬅️ Import this
 
-const LoginPage = () => {
+const Signup = () => {
   const navigate = useNavigate(); // ⬅️ Hook for navigation
 
   const handleLogin = () => {
@@ -15,13 +15,30 @@ const LoginPage = () => {
         <div className="flex justify-around mb-6 border-b border-yellow-400 pb-2">
           <div className="flex items-center gap-2 text-yellow-400 border-b-2 border-yellow-400 pb-1">
             <i className="ph ph-device-mobile"></i>
-            <span>Log In with Phone</span>
+            <span>Signup with Phone</span>
           </div>
           
         </div>
 
         {/* Phone Input */}
         <div className="mb-4">
+          <label className="block text-sm mb-1">📱 Phone No.</label>
+          <input
+            type="text"
+            placeholder="Mobile Number"
+            className="w-full px-4 py-2 border border-yellow-400 rounded-md text-black placeholder-gray-500"
+          />
+        </div>
+         <div className="mb-4">
+          <label className="block text-sm mb-1">📱 Phone No.</label>
+          <input
+            type="text"
+            placeholder="Mobile Number"
+            className="w-full px-4 py-2 border border-yellow-400 rounded-md text-black placeholder-gray-500"
+          />
+        </div>
+        
+         <div className="mb-4">
           <label className="block text-sm mb-1">📱 Phone No.</label>
           <input
             type="text"
@@ -80,13 +97,12 @@ const LoginPage = () => {
         >
           Log In
         </button>
-        <Link to="/sign">
         <button className="w-full py-3 rounded-full font-bold bg-white text-[#1c0066]">
           Register
-        </button></Link>
+        </button>
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default Signup;

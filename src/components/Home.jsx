@@ -20,8 +20,11 @@ function Home() {
           >
             Sign in
           </button>
-          <button className="bg-gradient-to-r from-yellow-500 to-yellow-400 text-white text-base font-bold py-3 rounded-full">
-            Sign up
+        <button
+            className="bg-gradient-to-r from-yellow-500 to-yellow-400 text-white text-base font-bold py-3 rounded-full mb-3"
+            onClick={() => navigate('/sign')}
+          >
+            Sign in
           </button>
         </div>
       </div>
