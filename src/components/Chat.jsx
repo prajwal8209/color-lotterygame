@@ -37,7 +37,7 @@ const Chat = () => {
      
 
       {/* Main content */}
-      <div className="oiu-container">
+      <div className="">
         <div className="oiu-wallet-box">
           <img src={b} alt="Color Prediction" style={{ width: "105px" }} />
           <h5 className="oiu-wallet-title1">Member</h5>
