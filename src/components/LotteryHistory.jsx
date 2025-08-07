@@ -6,7 +6,7 @@ import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // Sample datasets
 const w1Data = [
-  { name: "W1 User 1", rollNo: "W001", place: "Nashik", class: "8", age: 13, blood: "B+" },
+  { name: "W1 User 1", rollNo: "W001", place: "Nashik", class: "8", age: 13, blood: "B+" }, { name: "W1 User 1", rollNo: "W001", place: "Nashik", class: "8", age: 13, blood: "B+" }, { name: "W1 User 1", rollNo: "W001", place: "Nashik", class: "8", age: 13, blood: "B+" }
 ];
 const w2Data = [
   { name: "W2 User 2", rollNo: "W002", place: "Chennai", class: "9", age: 14, blood: "A+" },
